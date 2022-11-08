@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>QuantumAI</title>
+
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png">
+    <link rel="stylesheet" href="assets/lander.css">
+    <link rel="stylesheet" href="assets/custom.css">
+    <link data-type="F1TFunnelSdkCss" rel="stylesheet" href="assets/main.min.css">
+    <link rel="stylesheet" href="assets/errors.css">
+</head>
+
+<body>
+<div class="containerWrapper" style="overflow: initial">
+    <textarea id="tracking-body-top" style="display: none !important"></textarea>
+    <input data-ar-list="" data-ar-service="" data-url="#" data-webhook="" id="submit-form-action" type="hidden"
+           value="redirect-url">
+    <div class="nodoHiddenFormFields hide">
+        <input class="elInputHidden elInput" id="elHidden1" name="ad" type="hidden">
+        <input class="elInputHidden elInput" id="elHidden2" name="tag" type="hidden">
+        <input class="elInputHidden elInput" id="elHidden3" name="" type="hidden">
+        <input class="elInputHidden elInput" id="elHidden4" name="" type="hidden">
+        <input class="elInputHidden elInput" id="elHidden5" name="" type="hidden">
+    </div>
+    <div class="nodoCustomHTML hide"></div>
+    <div class="modalBackdropWrapper" style="
+          background-color: rgba(0, 0, 0, 0.4);
+          height: 100%;
+          opacity: 0;
+          top: -800px;
+          display: none;
+        "></div>
+    <div class="container containerModal midContainer noTopMargin padding40-top padding40-bottom padding40H cornersAll shadow0 bgNoRepeat emptySection radius20 borderLight border5px borderSolid displayImportantTimed"
+         data-animate="top" data-block-color="0074C7" data-delay="0" data-title="Modal" data-trigger="none"
+         id="modalPopup" style="
+          margin-top: 100px;
+          padding-top: 40px;
+          padding-bottom: 40px;
+          outline: none;
+          background-color: rgb(255, 255, 255);
+          position: absolute;
+          opacity: 0;
+          top: -800px;
+          display: none;
+        ">
+        <div class="containerInner ui-sortable">
+            <div class="row bgCover noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin"
+                 data-animate="fade" data-delay="500" data-title="1 column row" data-trigger="none" id="row--10241"
+                 style="
+              padding-top: 0px;
+              padding-bottom: 20px;
+              margin: 0px;
+              outline: none;
+            ">
+                <div class="col-md-12 innerContent col_left" data-animate="fade" data-col="full" data-delay="500"
+                     data-title="1st column" data-trigger="none" id="col-full-162" style="outline: none">
+                    <div class="col-inner bgCover noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin"
+                         style="padding: 0 10px">
+                        <div aria-disabled="false"
+                             class="de elProgressBar elAlign_center elMargin0 ui-droppable de-editable"
+                             data-animate="fade" data-ce="false" data-de-editing="false" data-de-type="progressbar"
+                             data-delay="500" data-element-theme="customized" data-title="Progress Bar"
+                             data-trigger="none" id="tmp_progressbar-94702"
+                             style="margin-top: 0px; outline: none; cursor: pointer">
+                            <div class="progress small-progress-bar elButtonShadow3 progressbar_offsetWhite progressbar_noborder elInputBR5">
+                                <div class="progress-bar progressbar_w_75 progress-bar-striped_active progressbar_bolditalic elButtonTxtColor2"
+                                     role="progressbar" style="background-color: rgb(255, 222, 0)">
+                                    Almost Complete...
+                                </div>
+                            </div>
+                        </div>
+                        <div aria-disabled="false" class="de elHeadlineWrapper ui-droppable de-editable"
+                             data-animate="fade" data-ce="true" data-de-editing="false" data-de-type="headline"
+                             data-delay="500" data-title="headline" data-trigger="none" id="tmp_headline1-40639"
+                             style="margin-top: 0px; outline: none; cursor: pointer">
+                            <h1 class="ne elHeadline hsSize3 lh4 elMargin0 elBGStyle0 hsTextShadow0"
+                                contenteditable="false" data-bold="inherit" data-gramm="false"
+                                style="text-align: center; font-size: 22px">
+                                <b>Becoming a QuantumAI trader is quick and easy!</b>
+                            </h1>
+                        </div>
+                        <div aria-disabled="false" class="de elHeadlineWrapper ui-droppable de-editable"
+                             data-animate="fade" data-ce="true" data-de-editing="false" data-de-type="headline"
+                             data-delay="500" data-gramm="false" data-title="sub-headline" data-trigger="none"
+                             id="tmp_subheadline-44680" style="margin-top: 5px; outline: none; cursor: pointer">
+                            <h2 class="ne elHeadline hsSize2 lh3 elMargin0 elBGStyle0 hsTextShadow0"
+                                contenteditable="false" data-bold="inherit" data-gramm="false"
+                                style="text-align: center; font-size: 18px"></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="closeLPModal">
+            <img alt="" src="assets/closemodal.png">
+        </div>
+    </div>
+    <div class="dropZoneForSections ui-droppable" style="display: none">
+        <div class="dropIconr">
+            <i class="fa fa-plus"></i>
+        </div>
+    </div>
+    <div class="container fullContainer noTopMargin padding20-top padding20-bottom padding40H noBorder borderSolid border3px cornersAll radius0 shadow0 bgNoRepeat emptySection"
+         data-animate="fade" data-block-color="0074C7" data-delay="500" data-title="Section" data-trigger="none"
+         id="section--70210" style="
+          padding-top: 10px;
+          padding-bottom: 10px;
+          outline: none;
+          background-color: rgb(185, 14, 223);
+        ">
+        <div class="containerInner ui-sortable">
+            <div class="row bgCover noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin"
+                 data-animate="fade" data-delay="500" data-title="1 column row" data-trigger="none" id="row--26499"
+                 style="
+              padding-top: 0px;
+              padding-bottom: 0px;
+              margin: 0px;
+              outline: none;
+            ">
+                <div class="col-md-12 innerContent col_left" data-animate="fade" data-col="full" data-delay="500"
+                     data-title="1st column" data-trigger="none" id="col-full-115" style="outline: none">
+                    <div class="col-inner bgCover noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin"
+                         style="padding: 0 10px">
+                        <div aria-disabled="false" class="de elHeadlineWrapper ui-droppable de-editable"
+                             data-animate="fade" data-ce="true" data-de-editing="false" data-de-type="headline"
+                             data-delay="500" data-gramm="false" data-title="sub-headline" data-trigger="none"
+                             id="tmp_subheadline-84002" style="margin-top: 0px; outline: none; cursor: pointer">
+                            <h2 class="ne elHeadline hsSize2 lh3 elMargin0 elBGStyle0 hsTextShadow0"
+                                contenteditable="false" data-bold="inherit" data-gramm="false" style="
+                      text-align: center;
+                      font-size: 23px;
+                      color: rgb(255, 255, 255);
+                    ">
+                                <b>Quantum AI works with&nbsp;</b>
+                            </h2>
+                            <div>
+                                <h2 class="ne elHeadline hsSize2 lh3 elMargin0 elBGStyle0 hsTextShadow0"
+                                    contenteditable="false" data-bold="inherit" data-gramm="false" style="
+                        text-align: center;
+                        font-size: 23px;
+                        color: rgb(255, 255, 255);
+                      ">
+                                    <b>250$ accounts</b>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dropZoneForSections ui-droppable" style="display: none">
+        <div class="dropIconr">
+            <i class="fa fa-plus"></i>
+        </div>
+    </div>
+    <div class="container fullContainer noTopMargin padding20-top padding20-bottom padding40H noBorder borderSolid border3px cornersAll radius0 shadow0 bgNoRepeat emptySection"
+         data-animate="fade" data-block-color="0074C7" data-delay="500" data-title="Section" data-trigger="none"
+         id="section--35335" style="
+          padding-top: 10px;
+          padding-bottom: 10px;
+          outline: none;
+          background-color: rgb(255, 255, 255);
+        ">
+        <div class="containerInner ui-sortable">
+            <div class="row bgCover noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin"
+                 data-animate="fade" data-delay="500" data-title="1 column row" data-trigger="none" id="row--45825"
+                 style="padding: 5px 0px 0px; margin: 0px; outline: none">
+                <div class="col-md-12 innerContent col_left" data-animate="fade" data-col="full" data-delay="500"
+                     data-title="1st column" data-trigger="none" id="col-full-135" style="outline: none">
+                    <div class="col-inner bgCover noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin"
+                         style="padding: 0 10px">
+                        <div aria-disabled="false"
+                             class="de elImageWrapper de-image-block elAlign_center elMargin0 ui-droppable de-editable"
+                             data-animate="fade" data-ce="false" data-de-editing="false" data-de-type="img"
+                             data-delay="500" data-title="image" data-trigger="none" id="tmp_image-63278"
+                             style="margin-top: 0px; outline: none; cursor: pointer">
+                            <img alt="" class="elIMG ximg"
+                                 src="assets/615c40109960163.5fe05f866cf20---Copy.jpg" tabindex="0" width="90">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dropZoneForSections ui-droppable" style="display: none">
+        <div class="dropIconr">
+            <i class="fa fa-plus"></i>
+        </div>
+    </div>
+    <div class="container fullContainer noTopMargin padding20-top padding20-bottom padding40H noBorder borderSolid border3px cornersAll radius0 shadow0 bgNoRepeat emptySection"
+         data-animate="fade" data-block-color="0074C7" data-delay="500" data-title="Section" data-trigger="none"
+         id="section--10812" style="padding-top: 20px; padding-bottom: 20px; outline: none">
+        <div class="containerInner ui-sortable">
+            <div class="row bgCover noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin"
+                 data-animate="fade" data-delay="500" data-title="2 column row" data-trigger="none" id="row--74398"
+                 style="
+              padding-top: 0px;
+              padding-bottom: 20px;
+              margin: 0px;
+              outline: none;
+            ">
+                <div class="innerContent col_left ui-resizable col-md-7" data-animate="fade" data-col="left"
+                     data-delay="500" data-title="1st column" data-trigger="none" id="col-left-152"
+                     style="outline: none">
+                    <div class="col-inner bgCover noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin"
+                         style="padding: 0 10px">
+                        <div aria-disabled="false" class="de elHeadlineWrapper ui-droppable de-editable"
+                             data-animate="fade" data-ce="true" data-de-editing="false" data-de-type="headline"
+                             data-delay="500" data-title="headline" data-trigger="none" id="tmp_headline1-95381-140"
+                             style="margin-top: 15px; outline: none; cursor: pointer">
+                            <h1 class="ne elHeadline hsSize3 lh4 elMargin0 elBGStyle0 hsTextShadow0"
+                                contenteditable="false" data-bold="inherit" data-gramm="false"
+                                style="text-align: center; font-size: 26px">
+                                <b>Zero experience needed</b>
+                            </h1>
+                        </div>
+                        <div aria-disabled="false" class="de elHeadlineWrapper ui-droppable de-editable"
+                             data-animate="fade" data-ce="true" data-de-editing="false" data-de-type="headline"
+                             data-delay="500" data-title="headline" data-trigger="none" id="headline-88939"
+                             style="margin-top: 10px; outline: none; cursor: pointer">
+                            <div>
+                                <h1 class="ne elHeadline hsSize3 lh4 elMargin0 elBGStyle0 hsTextShadow0"
+                                    contenteditable="false" data-bold="inherit" data-gramm="false"
+                                    style="text-align: center; font-size: 32px">
+                                    <b><u>100% automated</u></b>
+                                </h1>
+                            </div>
+                        </div>
+                        <div aria-disabled="false"
+                             class="de elImageWrapper de-image-block elAlign_center elMargin0 ui-droppable de-editable"
+                             data-animate="fade" data-ce="false" data-de-editing="false" data-de-type="img"
+                             data-delay="500" data-title="image" data-trigger="none" id="tmp_image-66117"
+                             style="margin-top: 0px; outline: none; cursor: pointer">
+                            <img alt="" class="elIMG ximg"
+                                 src="assets/VIDEO-MOCKUP-CON-LOGO-GIF.gif" tabindex="0">
+                        </div>
+                    </div>
+                </div>
+                <div class="innerContent col_right ui-resizable col-md-5" data-animate="fade" data-col="right"
+                     data-delay="500" data-title="2nd column" data-trigger="none" id="col-right-149"
+                     style="outline: none">
+                    <div class="col-inner bgCover noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin"
+                         style="padding: 0 10px">
+                        <div aria-disabled="false" class="de elHeadlineWrapper ui-droppable de-editable"
+                             data-animate="fade" data-ce="true" data-de-editing="false" data-de-type="headline"
+                             data-delay="500" data-title="headline" data-trigger="none" id="tmp_headline1-58652"
+                             style="margin-top: 15px; outline: none; cursor: pointer">
+                            <h1 class="ne elHeadline hsSize3 lh4 elMargin0 elBGStyle0 hsTextShadow0"
+                                contenteditable="false" data-bold="inherit" data-gramm="false"
+                                style="text-align: center; font-size: 32px">
+                                <b><u>Limited Time Offer!</u></b>
+                            </h1>
+                        </div>
+                        <div aria-disabled="false" class="de elHeadlineWrapper ui-droppable de-editable"
+                             data-animate="fade" data-ce="true" data-de-editing="false" data-de-type="headline"
+                             data-delay="500" data-gramm="false" data-title="sub-headline" data-trigger="none"
+                             id="tmp_subheadline-63653" style="margin-top: 15px; outline: none; cursor: pointer">
+                            <h2 class="ne elHeadline hsSize2 lh3 elMargin0 elBGStyle0 hsTextShadow0"
+                                contenteditable="false" data-bold="inherit" data-gramm="false"
+                                style="text-align: center; font-size: 24px">
+                                Join Now and Get the Quantum AI Trading Software!.
+                            </h2>
+                        </div>
+                        <div aria-disabled="false"
+                             class="de elBullet elMargin0 ui-droppable hiddenElementTools de-editable"
+                             data-animate="fade" data-ce="true" data-de-editing="false" data-de-type="list"
+                             data-delay="500" data-gramm="false" data-title="icon bullet list" data-trigger="none"
+                             id="tmp_list-18199" style="margin-top: 15px; outline: none; cursor: pointer">
+                            <ul class="ne elBulletList elBulletListNew elBulletList2 listBorder0"
+                                contenteditable="false" data-bold="inherit" data-gramm="false">
+                                <li style="font-size: 18px">
+                                    <i class="fa fa-fw fa-check" contenteditable="false"></i>100% <b>automated</b>!
+                                </li>
+                                <li style="font-size: 18px">
+                                    <i class="fa fa-fw fa-check" contenteditable="false"></i>​You have <u>complete
+                                    control</u> over your account<br>
+                                </li>
+                                <li style="font-size: 18px">
+                                    <i class="fa fa-fw fa-check" contenteditable="false"></i>​<b>No experience</b> is
+                                    needed. Our trading experts are
+                                    here to guide you<br>
+                                </li>
+                            </ul>
+                        </div>
+                        <div aria-disabled="false" class="de elBTN elAlign_center elMargin0 ui-droppable de-editable"
+                             data-animate="fade" data-ce="false" data-de-editing="false" data-de-type="button"
+                             data-delay="500" data-elbuttontype="1" data-element-theme="customized" data-title="button"
+                             data-trigger="none" id="tmp_button-65754-161"
+                             style="margin-top: 25px; outline: none; cursor: pointer">
+                            <a class="elButton elButtonSize1 elButtonColor1 elButtonRounded elButtonPadding2 elBtnVP_10 elBtnHP_25 elBTN_b_1_3 elButtonShadowN3 elButtonTxtColor2 elBTNone elButtonBlock elButtonCorner10 ea-buttonBounce elButtonFull"
+                               href=".modal"
+                               id="undefined-960" rel="modal:open" style="
+                      color: rgb(32, 22, 82);
+                      background: rgb(255, 222, 0);
+                      font-size: 24px;
+                    "><span class="elButtonMain">GET THE TRIAL</span>
+                                <span class="elButtonSub"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dropZoneForSections ui-droppable" style="display: none">
+        <div class="dropIconr">
+            <i class="fa fa-plus"></i>
+        </div>
+    </div>
+    <div class="container fullContainer noTopMargin padding20-top padding20-bottom padding40H noBorder borderSolid border3px cornersAll radius0 shadow0 bgNoRepeat emptySection"
+         data-animate="fade" data-block-color="0074C7" data-delay="500" data-title="Section" data-trigger="none"
+         id="section--92215" style="
+          padding-top: 0px;
+          padding-bottom: 0px;
+          outline: none;
+          color: rgb(0, 0, 0);
+          background-color: rgb(255, 222, 0);
+        ">
+        <div class="containerInner ui-sortable">
+            <div class="row bgCover noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin"
+                 data-animate="fade" data-delay="500" data-title="4 column row" data-trigger="none" id="row--72477"
+                 style="
+              padding-top: 20px;
+              padding-bottom: 20px;
+              margin: 0px;
+              outline: none;
+            ">
+                <div class="col-md-3 innerContent col_left ui-resizable" data-animate="fade" data-col="left"
+                     data-delay="500" data-title="1st column" data-trigger="none" id="col-left-137"
+                     style="outline: none">
+                    <div class="col-inner bgCover noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin"
+                         style="padding: 0 10px">
+                        <div aria-disabled="false" class="de elHeadlineWrapper ui-droppable de-editable"
+                             data-animate="fade" data-ce="true" data-de-editing="false" data-de-type="headline"
+                             data-delay="500" data-title="headline" data-trigger="none" id="headline-66459"
+                             style="margin-top: 0px; outline: none; cursor: pointer">
+                            <h1 class="ne elHeadline hsSize3 lh4 elMargin0 elBGStyle0 hsTextShadow0 mfs_24"
+                                contenteditable="false" data-bold="inherit" data-gramm="false"
+                                style="text-align: center; font-size: 28px">
+                                <b>Registration</b>
+                            </h1>
+                        </div>
+                        <div aria-disabled="false"
+                             class="de elImageWrapper de-image-block elAlign_center elMargin0 ui-droppable de-editable"
+                             data-animate="fade" data-ce="false" data-de-editing="false" data-de-type="img"
+                             data-delay="500" data-title="image" data-trigger="none" id="img-66148"
+                             style="margin-top: 15px; outline: none; cursor: pointer">
+                            <img alt="" class="elIMG ximg"
+                                 src="assets/icon1.png" tabindex="0" width="80">
+                        </div>
+                        <div aria-disabled="false" class="de elSeperator elMargin0 ui-droppable de-editable"
+                             data-animate="fade" data-ce="false" data-de-editing="false" data-de-type="divider"
+                             data-delay="500" data-title="Divider" data-trigger="none" id="divider-68788"
+                             style="margin-top: 15px; outline: none; cursor: pointer">
+                            <div class="elDivider elDividerStyle1 padding10-top padding10-bottom">
+                                <div class="elDividerInner" data-align="center" data-width-border="50"></div>
+                            </div>
+                        </div>
+                        <div aria-disabled="false" class="de elHeadlineWrapper ui-droppable de-editable"
+                             data-animate="fade" data-ce="true" data-de-editing="false" data-de-type="headline"
+                             data-delay="500" data-gramm="false" data-title="sub-headline" data-trigger="none"
+                             id="headline-61927" style="margin-top: 15px; outline: none; cursor: pointer">
+                            <h2 class="ne elHeadline hsSize2 lh3 elMargin0 elBGStyle0 hsTextShadow0 mfs_18"
+                                contenteditable="false" data-bold="inherit" data-gramm="false"
+                                style="text-align: center; font-size: 23px">
+                                We believe that only by helping you achieve your goals we
+                                will achieve ours.
+                            </h2>
+                            <div>
+                                <h2 class="ne elHeadline hsSize2 lh3 elMargin0 elBGStyle0 hsTextShadow0 mfs_18"
+                                    contenteditable="false" data-bold="inherit" data-gramm="false"
+                                    style="text-align: center; font-size: 23px"></h2>
+                                <div>
+                                    <h2 class="ne elHeadline hsSize2 lh3 elMargin0 elBGStyle0 hsTextShadow0 mfs_18"
+                                        contenteditable="false" data-bold="inherit" data-gramm="false"
+                                        style="text-align: center; font-size: 23px">
+                                        ​
+                                    </h2>
+                                    <div>
+                                        <h2 class="ne elHeadline hsSize2 lh3 elMargin0 elBGStyle0 hsTextShadow0 mfs_18"
+                                            contenteditable="false" data-bold="inherit" data-gramm="false"
+                                            style="text-align: center; font-size: 23px">
+                                            <b>4000+</b>&nbsp;QuantumAI users.
+                                        </h2>
+                                        <div>
+                                            <h2 class="ne elHeadline hsSize2 lh3 elMargin0 elBGStyle0 hsTextShadow0 mfs_18"
+                                                contenteditable="false" data-bold="inherit" data-gramm="false"
+                                                style="text-align: center; font-size: 23px">
+                                                <br>
+                                            </h2>
+                                            <div>
+                                                <h2 class="ne elHeadline hsSize2 lh3 elMargin0 elBGStyle0 hsTextShadow0 mfs_18"
+                                                    contenteditable="false" data-bold="inherit" data-gramm="false"
+                                                    style="text-align: center; font-size: 23px">
+                                                    Experienced traders and people that never traded
+                                                    before.
+                                                </h2>
+                                                <div>
+                                                    <h2 class="ne elHeadline hsSize2 lh3 elMargin0 elBGStyle0 hsTextShadow0 mfs_18"
+                                                        contenteditable="false" data-bold="inherit" data-gramm="false"
+                                                        style="text-align: center; font-size: 23px"></h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 innerContent col_right ui-resizable" data-animate="fade" data-col="center"
+                     data-delay="500" data-title="2nd column" data-trigger="none" id="col-center-left-109"
+                     style="outline: none">
+                    <div class="col-inner bgCover noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin"
+                         style="padding: 0 10px">
+                        <div aria-disabled="false" class="de elHeadlineWrapper ui-droppable de-editable"
+                             data-animate="fade" data-ce="true" data-de-editing="false" data-de-type="headline"
+                             data-delay="500" data-title="headline" data-trigger="none" id="tmp_headline1-60228"
+                             style="margin-top: 0px; outline: none; cursor: pointer">
+                            <h1 class="ne elHeadline hsSize3 lh4 elMargin0 elBGStyle0 hsTextShadow0 mfs_24"
+                                contenteditable="false" data-bold="inherit" data-gramm="false"
+                                style="text-align: center; font-size: 28px">
+                                <b>Safe and Secured</b>
+                            </h1>
+                        </div>
+                        <div aria-disabled="false"
+                             class="de elImageWrapper de-image-block elAlign_center elMargin0 ui-droppable de-editable"
+                             data-animate="fade" data-ce="false" data-de-editing="false" data-de-type="img"
+                             data-delay="500" data-title="image" data-trigger="none" id="tmp_image-31920"
+                             style="margin-top: 15px; outline: none; cursor: pointer">
+                            <img alt="" class="elIMG ximg"
+                                 src="assets/icon2.png" tabindex="0" width="80">
+                        </div>
+                        <div aria-disabled="false" class="de elSeperator elMargin0 ui-droppable de-editable"
+                             data-animate="fade" data-ce="false" data-de-editing="false" data-de-type="divider"
+                             data-delay="500" data-title="Divider" data-trigger="none" id="tmp_divider-73056"
+                             style="margin-top: 15px; outline: none; cursor: pointer">
+                            <div class="elDivider elDividerStyle1 padding10-top padding10-bottom">
+                                <div class="elDividerInner" data-align="center" data-width-border="50"></div>
+                            </div>
+                        </div>
+                        <div aria-disabled="false" class="de elHeadlineWrapper ui-droppable de-editable"
+                             data-animate="fade" data-ce="true" data-de-editing="false" data-de-type="headline"
+                             data-delay="500" data-gramm="false" data-title="sub-headline" data-trigger="none"
+                             id="tmp_subheadline-80497" style="margin-top: 15px; outline: none; cursor: pointer">
+                            <h2 class="ne elHeadline hsSize2 lh3 elMargin0 elBGStyle0 hsTextShadow0 mfs_18"
+                                contenteditable="false" data-bold="inherit" data-gramm="false"
+                                style="text-align: center; font-size: 23px">
+                                QuantumAI technology is what we personally use on a daily
+                                basis for our own and our client's investments.&nbsp;
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 innerContent col_right ui-resizable" data-animate="fade" data-col="right"
+                     data-delay="500" data-title="3rd Column" data-trigger="none" id="col-center-right-107"
+                     style="outline: none">
+                    <div class="col-inner bgCover noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin"
+                         style="padding: 0 10px">
+                        <div aria-disabled="false" class="de elHeadlineWrapper ui-droppable de-editable"
+                             data-animate="fade" data-ce="true" data-de-editing="false" data-de-type="headline"
+                             data-delay="500" data-title="headline" data-trigger="none" id="tmp_headline1-81832"
+                             style="margin-top: 0px; outline: none; cursor: pointer">
+                            <h1 class="ne elHeadline hsSize3 lh4 elMargin0 elBGStyle0 hsTextShadow0 mfs_24"
+                                contenteditable="false" data-bold="inherit" data-gramm="false"
+                                style="text-align: center; font-size: 28px">
+                                <b>A.I. Technology</b>
+                            </h1>
+                        </div>
+                        <div aria-disabled="false"
+                             class="de elImageWrapper de-image-block elAlign_center elMargin0 ui-droppable de-editable"
+                             data-animate="fade" data-ce="false" data-de-editing="false" data-de-type="img"
+                             data-delay="500" data-title="image" data-trigger="none" id="tmp_image-41686"
+                             style="margin-top: 15px; outline: none; cursor: pointer">
+                            <img alt="" class="elIMG ximg"
+                                 src="assets/icon3.png" tabindex="0" width="80">
+                        </div>
+                        <div aria-disabled="false" class="de elSeperator elMargin0 ui-droppable de-editable"
+                             data-animate="fade" data-ce="false" data-de-editing="false" data-de-type="divider"
+                             data-delay="500" data-title="Divider" data-trigger="none" id="tmp_divider-57266"
+                             style="margin-top: 15px; outline: none; cursor: pointer">
+                            <div class="elDivider elDividerStyle1 padding10-top padding10-bottom">
+                                <div class="elDividerInner" data-align="center" data-width-border="50"></div>
+                            </div>
+                        </div>
+                        <div aria-disabled="false" class="de elHeadlineWrapper ui-droppable de-editable"
+                             data-animate="fade" data-ce="true" data-de-editing="false" data-de-type="headline"
+                             data-delay="500" data-gramm="false" data-title="sub-headline" data-trigger="none"
+                             id="tmp_subheadline-76413" style="margin-top: 15px; outline: none; cursor: pointer">
+                            <h2 class="ne elHeadline hsSize2 lh3 elMargin0 elBGStyle0 hsTextShadow0"
+                                contenteditable="false" data-bold="inherit" data-gramm="false"
+                                style="text-align: center; font-size: 23px">
+                                Our Algorithm recognises opportunities and executes them
+                                automatically.
+                            </h2>
+                            <div>
+                                <h2 class="ne elHeadline hsSize2 lh3 elMargin0 elBGStyle0 hsTextShadow0"
+                                    contenteditable="false" data-bold="inherit" data-gramm="false"
+                                    style="text-align: center; font-size: 23px"></h2>
+                                <div>
+                                    <h2 class="ne elHeadline hsSize2 lh3 elMargin0 elBGStyle0 hsTextShadow0"
+                                        contenteditable="false" data-bold="inherit" data-gramm="false"
+                                        style="text-align: center; font-size: 23px">
+                                        ​
+                                    </h2>
+                                    <div>
+                                        <h2 class="ne elHeadline hsSize2 lh3 elMargin0 elBGStyle0 hsTextShadow0"
+                                            contenteditable="false" data-bold="inherit" data-gramm="false"
+                                            style="text-align: center; font-size: 23px">
+                                            Tap into an exciting world of currencies, world
+                                            stocks, commodities, futures, and more...
+                                        </h2>
+                                        <div>
+                                            <h2 class="ne elHeadline hsSize2 lh3 elMargin0 elBGStyle0 hsTextShadow0"
+                                                contenteditable="false" data-bold="inherit" data-gramm="false"
+                                                style="text-align: center; font-size: 23px"></h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 innerContent col_right ui-resizable" data-animate="fade" data-col="right"
+                     data-delay="500" data-title="4th Column" data-trigger="none" id="col-right-129"
+                     style="outline: none">
+                    <div class="col-inner bgCover noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin"
+                         style="padding: 0 10px">
+                        <div aria-disabled="false" class="de elHeadlineWrapper ui-droppable de-editable"
+                             data-animate="fade" data-ce="true" data-de-editing="false" data-de-type="headline"
+                             data-delay="500" data-title="headline" data-trigger="none" id="tmp_headline1-95589"
+                             style="margin-top: 0px; outline: none; cursor: pointer">
+                            <h1 class="ne elHeadline hsSize3 lh4 elMargin0 elBGStyle0 hsTextShadow0"
+                                contenteditable="false" data-bold="inherit" data-gramm="false"
+                                style="text-align: center; font-size: 28px">
+                                <b style="
+                        color: inherit;
+                        font-family: inherit;
+                        background-color: initial;
+                      ">Trial</b>
+                            </h1>
+                        </div>
+                        <div aria-disabled="false"
+                             class="de elImageWrapper de-image-block elAlign_center elMargin0 ui-droppable de-editable"
+                             data-animate="fade" data-ce="false" data-de-editing="false" data-de-type="img"
+                             data-delay="500" data-title="image" data-trigger="none" id="tmp_image-16514"
+                             style="margin-top: 15px; outline: none; cursor: pointer">
+                            <img alt="" class="elIMG ximg"
+                                 src="assets/tickets.png" tabindex="0" width="80">
+                        </div>
+                        <div aria-disabled="false" class="de elSeperator elMargin0 ui-droppable de-editable"
+                             data-animate="fade" data-ce="false" data-de-editing="false" data-de-type="divider"
+                             data-delay="500" data-title="Divider" data-trigger="none" id="tmp_divider-32573"
+                             style="margin-top: 15px; outline: none; cursor: pointer">
+                            <div class="elDivider elDividerStyle1 padding10-top padding10-bottom">
+                                <div class="elDividerInner" data-align="center" data-width-border="50"></div>
+                            </div>
+                        </div>
+                        <div aria-disabled="false" class="de elHeadlineWrapper ui-droppable de-editable"
+                             data-animate="fade" data-ce="true" data-de-editing="false" data-de-type="headline"
+                             data-delay="500" data-gramm="false" data-title="sub-headline" data-trigger="none"
+                             id="tmp_subheadline-92175" style="margin-top: 15px; outline: none; cursor: pointer">
+                            <h2 class="ne elHeadline hsSize2 lh3 elMargin0 elBGStyle0 hsTextShadow0"
+                                contenteditable="false" data-bold="inherit" data-gramm="false"
+                                style="text-align: center; font-size: 23px">
+                                Our goal is to make profitable trading possible for
+                                everyone.
+                            </h2>
+                            <div>
+                                <h2 class="ne elHeadline hsSize2 lh3 elMargin0 elBGStyle0 hsTextShadow0"
+                                    contenteditable="false" data-bold="inherit" data-gramm="false"
+                                    style="text-align: center; font-size: 23px">
+                                    <br>
+                                </h2>
+                                <div>
+                                    <h2 class="ne elHeadline hsSize2 lh3 elMargin0 elBGStyle0 hsTextShadow0"
+                                        contenteditable="false" data-bold="inherit" data-gramm="false"
+                                        style="text-align: center; font-size: 23px">
+                                        During the trial period, you will get our trading
+                                        expert's full support.
+                                    </h2>
+                                    <div>
+                                        <h2 class="ne elHeadline hsSize2 lh3 elMargin0 elBGStyle0 hsTextShadow0"
+                                            contenteditable="false" data-bold="inherit" data-gramm="false"
+                                            style="text-align: center; font-size: 23px"></h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row bgCover noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin"
+                 data-animate="fade" data-delay="500" data-title="1 column row" data-trigger="none" id="row--50971"
+                 style="
+              padding-top: 20px;
+              padding-bottom: 20px;
+              margin: 0px;
+              outline: none;
+            ">
+                <div class="col-md-12 innerContent col_left" data-animate="fade" data-col="full" data-delay="500"
+                     data-title="1st column" data-trigger="none" id="col-full-189" style="outline: none">
+                    <div class="col-inner bgCover noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin"
+                         style="padding: 0 10px">
+                        <div aria-disabled="false" class="de elBTN elAlign_center elMargin0 ui-droppable de-editable"
+                             data-animate="fade" data-ce="false" data-de-editing="false" data-de-type="button"
+                             data-delay="500" data-elbuttontype="1" data-element-theme="customized" data-title="button"
+                             data-trigger="none" id="button-53079"
+                             style="margin-top: 25px; outline: none; cursor: pointer">
+                            <a class="elButton elButtonSize1 elButtonColor1 elButtonRounded elButtonPadding2 elBtnVP_10 elBtnHP_25 elBTN_b_1_3 elButtonShadowN3 elButtonTxtColor2 elBTNone elButtonBlock elButtonCorner10 ea-buttonBounce elButtonFull"
+                               href=".modal"
+                               id="undefined-960-711" rel="modal:open" style="
+                      color: rgb(255, 222, 0);
+                      background: rgb(0, 0, 0);
+                      font-size: 24px;
+                    "><span class="elButtonMain">GET THE TRIAL</span>
+                                <span class="elButtonSub"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container fullContainer noTopMargin padding20-top padding20-bottom padding40H noBorder borderSolid border3px cornersAll radius0 shadow0 bgNoRepeat emptySection"
+         data-animate="fade" data-block-color="0074C7" data-delay="500" data-title="Section" data-trigger="none"
+         id="section--35673" style="
+          padding-top: 20px;
+          padding-bottom: 20px;
+          outline: none;
+          background-color: rgb(0, 0, 0);
+        ">
+        <div class="containerInner ui-sortable">
+            <div class="row bgCover noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin"
+                 data-animate="fade" data-delay="500" data-title="1 column row" data-trigger="none" id="row--54846"
+                 style="
+              padding-top: 20px;
+              padding-bottom: 20px;
+              margin: 0px;
+              outline: none;
+            ">
+                <div class="col-md-12 innerContent col_left" data-animate="fade" data-col="full" data-delay="500"
+                     data-title="1st column" data-trigger="none" id="col-full-188" style="outline: none">
+                    <div class="col-inner bgCover noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin"
+                         style="padding: 0 10px">
+                        <div aria-disabled="false" class="de elHeadlineWrapper ui-droppable de-editable"
+                             data-animate="fade" data-ce="true" data-de-editing="false" data-de-type="headline"
+                             data-delay="500" data-gramm="false" data-title="sub-headline" data-trigger="none"
+                             id="tmp_subheadline-36020" style="margin-top: 0px; outline: none; cursor: pointer">
+                            <h2 class="ne elHeadline hsSize2 lh3 elMargin0 elBGStyle0 hsTextShadow0"
+                                contenteditable="false" data-bold="inherit" data-gramm="false" style="
+                      text-align: center;
+                      font-size: 12px;
+                      color: rgb(136, 136, 136);
+                    ">
+                                This website is not part of Facebook or Facebook Inc.
+                                Additionally, this is NOT endorsed by Facebook in any way.
+                            </h2>
+                            <div>
+                                <h2 class="ne elHeadline hsSize2 lh3 elMargin0 elBGStyle0 hsTextShadow0"
+                                    contenteditable="false" data-bold="inherit" data-gramm="false" style="
+                        text-align: center;
+                        font-size: 12px;
+                        color: rgb(136, 136, 136);
+                      ">
+                                    FACEBOOK is a trademark of FACEBOOK Inc
+                                </h2>
+                                <div>
+                                    <h2 class="ne elHeadline hsSize2 lh3 elMargin0 elBGStyle0 hsTextShadow0"
+                                        contenteditable="false" data-bold="inherit" data-gramm="false" style="
+                          text-align: center;
+                          font-size: 12px;
+                          color: rgb(136, 136, 136);
+                        ">
+                                        <br>
+                                    </h2>
+                                    <div>
+                                        <h2 class="ne elHeadline hsSize2 lh3 elMargin0 elBGStyle0 hsTextShadow0"
+                                            contenteditable="false" data-bold="inherit" data-gramm="false" style="
+                            text-align: center;
+                            font-size: 12px;
+                            color: rgb(136, 136, 136);
+                          ">
+                                            traderobofx.com @2015-<script>document.write(new Date().getFullYear())</script>
+                                        </h2>
+                                        <div>
+                                            <h2 class="ne elHeadline hsSize2 lh3 elMargin0 elBGStyle0 hsTextShadow0"
+                                                contenteditable="false" data-bold="inherit" data-gramm="false" style="
+                              text-align: center;
+                              font-size: 12px;
+                              color: rgb(136, 136, 136);
+                            ">
+                                                All rights reserved
+                                            </h2>
+                                            <div>
+                                                <h2 class="ne elHeadline hsSize2 lh3 elMargin0 elBGStyle0 hsTextShadow0"
+                                                    contenteditable="false" data-bold="inherit" data-gramm="false"
+                                                    style="
+                                text-align: center;
+                                font-size: 12px;
+                                color: rgb(136, 136, 136);
+                              ">
+                                                    <br>
+                                                </h2>
+                                                <div>
+                                                    <h2 class="ne elHeadline hsSize2 lh3 elMargin0 elBGStyle0 hsTextShadow0"
+                                                        contenteditable="false" data-bold="inherit" data-gramm="false"
+                                                        style="
+                                  text-align: center;
+                                  font-size: 12px;
+                                  color: rgb(136, 136, 136);
+                                ">
+                                                        <a class=""
+                                                           href=".modal"
+                                                           id="link-55080" rel="modal:open" target="_parent">Terms
+                                                            and Condition</a>
+                                                    </h2>
+                                                    <div>
+                                                        <h2 class="ne elHeadline hsSize2 lh3 elMargin0 elBGStyle0 hsTextShadow0"
+                                                            contenteditable="false" data-bold="inherit"
+                                                            data-gramm="false" style="
+                                    text-align: center;
+                                    font-size: 12px;
+                                    color: rgb(136, 136, 136);
+                                  ">
+                                                            <a class=""
+                                                               href=".modal"
+                                                               id="link-44642" rel="modal:open"
+                                                               target="_parent">Privacy Policy</a>
+                                                        </h2>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="modal">
+    <div class="modal__wrapper">
+        <div class="modal__form">
+            <button type="button" class="modal__closer">
+                <div class="modal__closer-wrapper">
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            <div class="de elProgressBar elAlign_center elMargin0 ui-droppable de-editable" id="tmp_progressbar-94702"
+                 data-de-type="progressbar" data-de-editing="false" data-title="Progress Bar" data-ce="false"
+                 data-trigger="none" data-animate="fade" data-delay="500"
+                 style="margin-top: 0px; outline: none; cursor: pointer" data-element-theme="customized"
+                 aria-disabled="false">
+                <div class="progress small-progress-bar elButtonShadow3 progressbar_offsetWhite progressbar_noborder elInputBR5">
+                    <div class="progress-bar progressbar_w_75 progress-bar-striped_active progressbar_bolditalic elButtonTxtColor2"
+                         role="progressbar" style="background-color: rgb(255, 222, 0)">
+                        Almost Complete...
+                    </div>
+                </div>
+            </div>
+            <h3 class="modal__title">
+                Becoming a QuantumAI trader is quick and easy!
+            </h3>
+            <div class="f1t-form" style="margin-top: 20px;">
+                <form class="f1t-form__wrapper signup_form" action="https://leadpntci.com/leads" method="post">
+                    <div class="f1t-form__inner">
+                        <div class="f1t-form__row">
+                            <div class="f1t-form-field"><label>
+                                <div class="f1t-form-field__label">First Name</div>
+                                <input type="text" placeholder="Your First Name" name="first_name" value="" required> </label>
+                            </div>
+                        </div>
+                        <div class="f1t-form__row">
+                            <div class="f1t-form-field"><label>
+                                <div class="f1t-form-field__label">Last Name</div>
+                                <input type="text" placeholder="Your Last Name" name="last_name" value="" required> </label>
+                            </div>
+                        </div>
+                        <div class="f1t-form__row">
+                            <div class="f1t-form-field"><label>
+                                <div class="f1t-form-field__label">Email</div>
+                                <input type="email" placeholder="Your E-mail" name="email" value="" required> </label></div>
+                        </div>
+                        <div class="f1t-form__row">
+                            <div class="f1t-form-field f1t-form-field--phone"><label>
+                                <div class="f1t-form-field__label">Phone</div>
+                                <input type="tel" name="phone_raw" placeholder="Phone" value="" required>
+                                <input name="phone" type="hidden">
+                            </label></div>
+                        </div>
+                        <div class="f1t-form__row">
+                            <div class="f1t-form-field f1t-form-field--password" data-counter="0"
+                                 style="display: none;"><label>
+                                <div class="f1t-form-field__label">Password</div>
+                                <div class="f1t-form-field__inner">
+                                    <div class="f1t-form-field__password"><input type="password"
+                                                                                 placeholder="Your password"
+                                                                                 name="password" value="">
+                                        <div class="f1t-form-field__toggle"></div>
+                                    </div>
+                                    <div class="f1t-form-field__generate">Generate new password</div>
+                                </div>
+                            </label></div>
+                        </div>
+                    </div>
+                    <div class="f1t-form__footer">
+                        <button class="f1t-form__submit" type="submit">Submit</button>
+                    </div>
+                    <input type="hidden" name="flow_hash" value="636a0f46c219201986">
+                    <input type="hidden" name="landing" value="Quantum AI yellow">
+                    <input type="hidden" name="facebook_pixel_id" value="{facebook_pixel_id}">
+                    <input type="hidden" name="click_id" value="VInewlend">
+                    <input type="hidden" name="sub1" value="{sub1}">
+                    <input type="hidden" name="sub2" value="{sub2}">
+                    <input type="hidden" name="sub3" value="{sub3}">
+                    <input type="hidden" name="sub4" value="{sub4}">
+                    <input type="hidden" name="landing_url" value="" id="lUrl">
+                    <input type="hidden" name="success_url" value="" id="successUrl">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const url = new URL("{Your success URL}");
+        const successUrl = document.getElementById('successUrl');
+        successUrl.value = url.toString();
+    })
+</script>
+
+<script src="assets/landing_url2.js"></script>
+
+<script src="assets/index.js"></script>
+
+<script src="assets/intlTelInput.min.js"></script>
+<script src="assets/errors.js"></script>
+
+</body>
+</html>
